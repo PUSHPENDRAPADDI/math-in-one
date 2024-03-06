@@ -1,8 +1,11 @@
 # math-in-one  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
 ## Introduction
 This package includes the following functionalities🐻
+
 - **Sum:** This method can take multiple parameter and return sum of all numbers
+
 - **Product:** This method can take multiple parameter and return product of all numbers.
+
 - **Random Text:** This method can take 4 parameter and return random text. Bydefault it return random digits of 6 length.
 
 ## Installation
@@ -28,10 +31,15 @@ randomtext(length,alphaNumeric,allowUppercase,allowLowercase,alpha)
 ```
 If no parameter pass in above method then it will return 6 digit of random text.
 It accept 4 parameter :-
+
  **length** :- Length of random text accepted. Default (6)
+
  **alphaNumeric** :- If need to generate alphaNumeric text then proivde it true. Default (false)
+
  **allowUppercase** :- If need to generate character in upper case proivde it true. Default (false)
+
   **allowLowercase** :- If need to generate character in lower case proivde it true. Default (false)
+  
   **alpha** :- If need to generate only character proivde it true. Default (false)
   
 It will return **Number/ AlphaNumeric/ Alphabet**..
