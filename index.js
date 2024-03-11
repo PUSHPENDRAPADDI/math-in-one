@@ -1,9 +1,13 @@
 const Maths = {
-    sum: function (...numbers) {
-        return numbers.reduce((sum, num) => sum + num, 0);
+    sum: function (...params) {
+        const numbers = Array.isArray(params[0]) ? params[0] : params;
+        const sum = numbers.reduce((total, num) => total + num, 0);
+        return sum;
     },
-    product: function (...numbers) {
-        return numbers.reduce((prod, num) => prod * num, 1);
+    product: function (...params) {
+        const numbers = Array.isArray(params[0]) ? params[0] : params;
+        const prod = numbers.reduce((prod, num) => prod * num, 1);
+        return prod;
     },
     randomtext: function (length = 6, alphaNumeric = false, allowUppercase = false, allowLowercase = false, alpha = false) {
         let result = '';
@@ -38,6 +42,14 @@ const Maths = {
         }
 
         return result;
+    },
+    average: function (...params) {
+        const numbers = Array.isArray(params[0]) ? params[0] : params;
+        const avg = numbers.reduce((total, num) => total + num, 0);
+        return avg;
+    },
+    flatten: function (arr) {
+        return arr.flat(Infinity)
     }
 }
 export default Maths;

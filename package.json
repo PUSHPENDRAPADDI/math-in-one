@@ -1,6 +1,6 @@
 {
   "name": "math-in-one",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This npm package provide all the possible feature inside math operation",
   "main": "index.js",
   "type": "module",
@@ -14,7 +14,7 @@
   "keywords": [
     "Math",
     "methods",
-    "randomText"
+    "flattenArray"
   ],
   "author": "Pushpendra Yadav",
   "license": "MIT",

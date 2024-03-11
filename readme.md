@@ -2,11 +2,15 @@
 ## Introduction
 This package includes the following functionalities🐻
 
-- **Sum:** This method can take multiple parameter and return sum of all numbers
+- **Sum:** This method can take multiple parameter or Array and return sum of all numbers or digits of array.
 
-- **Product:** This method can take multiple parameter and return product of all numbers.
+- **Product:** This method can take multiple parameter or Array and return product of all numbers or digits of array.
 
 - **Random Text:** This method can take 4 parameter and return random text. Bydefault it return random digits of 6 length.
+
+- **Average:** This method can take multiple parameter or Array and return product of all numbers or digits of array.
+
+- **Flatten Array:** This method can take a nested array and return 1-D array.
 
 ## Installation
 
@@ -21,6 +25,10 @@ npm i math-in-one
 ```
 
 ## Usage Guidelines
+
+``` js
+   import Maths from 'math-in-one'
+```
 
 ### **Random Text**
 
@@ -57,21 +65,51 @@ It will return **Number/ AlphaNumeric/ Alphabet**..
 
 ### **Sum:**
 ```.js
-import Maths from 'math-in-one'
-Maths.sum(8,2,3,4,5);
+
+console.log(Maths.sum(8,2,3,4,5));
+// output :- 22
+
+Maths.sum([8,2,3,4,5[);
 // output :- 22
 ```
 ### **Product:**
 ```.js
-import Maths from 'math-in-one'
-Maths.product(8,2,3,4,5);
+
+console.log(Maths.product(8,2,3,4,5));
 // output :- 960
+
+console.log(Maths.sum([8,2,3,4,5]));
+// output :- 960
+
 ```
 ### **Random Text:**
 ```.js
-import Maths from 'math-in-one'
+
 Maths.randomtext(8,true,true,true,false)
 // output :- QMIV2AHV
+```
+
+### **Average:**
+```.js
+
+console.log(Maths.average(1, 2, 3, 4));
+// output :- 10
+
+console.log(Maths.average([1, 2, 3, 4]));
+// output :- 10
+
+```
+
+### **Flatten:**
+```.js
+
+console.log(Maths.flatten([1,[2,[23,34,[5,6,7,8]], 4]]));
+
+// output :- [
+  1, 2, 23, 34, 5,
+  6, 7,  8,  4
+]
+
 ```
 
 # Build
